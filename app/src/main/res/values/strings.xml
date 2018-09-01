@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="title_activity_tip_calculator">Tip Calculator</string>
+    <string name="bill_amount_label">Bill Amount</string>
+    <string name="bill_amount">34.60</string>
+    <string name="tip_percent_label">Percent</string>
+    <string name="tip_percent">15%</string>
+    <string name="increase">+</string>
+    <string name="decrease">-</string>
+    <string name="tip_amount_label">Tip</string>
+    <string name="tip_amount">$0.00</string>
+    <string name="total_amount_label">Total</string>
+    <string name="total_amount">$0.00</string>
+    <string name="none_radio">None</string>
+    <string name="tip_radio">Tip</string>
+    <string name="total_radio">Total</string>
+    <string name="split_bill">Split bill?</string>
+    <string name="per_person_label">Per Person</string>
+    <string name="per_person_bill">$13.04</string>
+
+    <string name="menu_setting">Setting</string>
+    <string name="menu_about">About</string>
+    <string name="remember_percent_title">Percent Title</string>
+    <string name="remember_percent_summary">Percent summary</string>
+    <string name="rounding_title">Rounding Title</string>
+    <string name="rounding_summary">Rounding summary</string>
+    <string name="rounding_default">Default</string>
+    <string name="percent_category_title">Percent Category</string>
+
+    <string-array name="split_array">
+        <item>Split the bill ? NO</item>
+        <item>Split the bill ? 2 ways</item>
+        <item>Split the bill ? 3 ways</item>
+        <item>Split the bill ? 4 ways</item>
+    </string-array>
+
+    <string-array name="entry_key">
+        <item>Value 1</item>
+        <item>Value 2</item>
+        <item>Value 3</item>
+        <item>Value 4</item>
+    </string-array>
+
+    <string-array name="entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

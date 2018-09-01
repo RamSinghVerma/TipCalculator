@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/billAmountLabel"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="2dp"
+        android:text="@string/bill_amount_label"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/billAmountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/billAmountLabel"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/bill_amount"
+         >
+        <requestFocus/>
+    </EditText>
+
+
+
+
+    <TextView
+        android:id="@+id/percentLabel"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/billAmountLabel"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="2dp"
+        android:text="@string/tip_percent_label"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/percentTextView"
+        android:layout_width="56dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/percentLabel"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@+id/seekBar"
+        android:layout_toRightOf="@+id/percentLabel"
+        android:ellipsize="none"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:singleLine="true"
+        android:text="@string/tip_percent"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/tipLabel"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/percentLabel"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="2dp"
+        android:text="@string/tip_amount_label"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/percentLabel"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tipLabel"
+        android:text="@string/tip_amount"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/totalLabel"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tipLabel"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="2dp"
+        android:text="@string/total_amount_label"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tipLabel"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/totalLabel"
+        android:text="@string/total_amount"
+        android:textSize="25sp" />
+
+    <SeekBar
+        android:id="@+id/percentSeekBar"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/billAmountEditText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="189dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/roundView"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/billAmountLabel"
+        android:layout_marginTop="207dp"
+        android:text="Rounding"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/roundingRadioGroup"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/billAmountEditText"
+        android:layout_alignTop="@+id/roundView"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/roundingNoneRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/none_radio" />
+
+        <RadioButton
+            android:id="@+id/roundingTipRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_radio" />
+
+        <RadioButton
+            android:id="@+id/roundingTotalRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_radio" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/splitSpinner"
+        android:layout_width="215dp"
+        android:layout_height="38dp"
+
+        android:layout_below="@+id/roundingRadioGroup"
+        android:layout_toRightOf="@+id/splitBill"
+        android:layout_marginTop="10dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/splitBill"
+        android:layout_width="147dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/roundingRadioGroup"
+        android:layout_marginTop="10dp"
+        android:text="@string/split_bill"
+        android:textSize="25sp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/perPersonLabel"
+        android:layout_width="147dp"
+        android:layout_height="40dp"
+        android:paddingLeft="2dp"
+        android:text="@string/per_person_label"
+        android:textSize="25sp"
+        android:layout_below="@+id/splitBill"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/perPersonTextView"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+       android:layout_below="@+id/splitSpinner"
+        android:layout_toRightOf="@+id/perPersonLabel"
+        android:text="@string/per_person_bill"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>
